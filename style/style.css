@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+body{
+    background-image: linear-gradient(to bottom right, #2b0049, #190024);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+.technologies {
+    font-family: 'Cutive Mono', monospace;
+    margin: 20px;
+}
+
+.technologies h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tech-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Распределение по 2 колонкам */
+    gap: 10px; /* Расстояние между элементами */
+}
+
+.tech-item {
+    text-align: center;
+}
+
+.tech-item img {
+    width: 50px; /* Размер иконки */
+    height: 50px;
+    margin-bottom: 5px; /* Расстояние между иконкой и текстом */
+}
+
+.tech-item span {
+    font-size: 18px;
+}
