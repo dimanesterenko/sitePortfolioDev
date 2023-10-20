@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 body{
-    background-image: linear-gradient(to bottom right, #2b0049, #190024);
+    background-color: #190024;
     margin: 0;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: aliceblue;
+    font-family: 'Cutive Mono', monospace;
+}
+.wrap{
+        max-width: 1200px;
+        margin: 0 auto; 
+        padding: 20px; 
 }
 .technologies {
     font-family: 'Cutive Mono', monospace;
     margin: 20px;
+    text-align: center;
 }
 
 .technologies h2 {
@@ -22,8 +26,8 @@ body{
     list-style-type: none;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Распределение по 2 колонкам */
-    gap: 10px; /* Расстояние между элементами */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 5px; 
 }
 
 .tech-item {
@@ -31,11 +35,78 @@ body{
 }
 
 .tech-item img {
-    width: 50px; /* Размер иконки */
+    width: 50px; 
     height: 50px;
-    margin-bottom: 5px; /* Расстояние между иконкой и текстом */
+    margin-bottom: 15px; 
 }
 
 .tech-item span {
     font-size: 18px;
 }
+
+
+.clear{
+    clear: both;
+    margin: 40px;
+}
+
+
+/*menu*/
+.menu {
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+    padding: 0;
+    position: fixed; /* Фиксированное позиционирование */
+    width: 1200px;
+    top: 0; /* Меню прижимается к верху страницы */
+    z-index: 1000; /* Устанавливаем z-index для надежности */
+    text-align: center;
+    padding-top: 10px;
+    background-color: #190024;
+
+}
+
+.menu li {
+    display: inline-block; /* Размещаем элементы горизонтально */
+    margin: 0;
+    padding: 10px 20px; /* Отступы вокруг элементов */
+}
+
+.menu a {
+    color: #fff; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 16px; /* Размер шрифта */
+}
+
+.menu a:hover {
+    background-color: #2b0049;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.text {
+    flex: 1;
+    padding-right: 20px;
+}
+.about p{
+    width: 500px;
+}
+
+.about img{
+    width: 250px;
+    height: auto;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
